@@ -12,33 +12,37 @@ def waiting_game():
             """
     TARGET = float(4.000)
     result = float
+
     def Enter_key_input():
         """Doc String"""
+        pass
 
-        def start_pressed():
+    def start_pressed():
+        """Doc String"""
+        pass
+
+    def stop_pressed():
+        """Doc String"""
+        pass
+
+    def show_result(self):
+        """Too Fast!, Too Slow, We have a winner!"""
+        global TARGET
+        global result
+        under = float
+        # Too Fast
+        if result<TARGET:
+             under = TARGET - result
+            return "Elapsed time: ", result, "Too Fast by ", under
+
+
+        # Too Slow
+        elif result > TARGET:
+            over = float
+            over = (float(self.TARGET - self.result))
+
+        def time_elapsed():
             """Doc String"""
             pass
-
-        def stop_pressed():
-            """Doc String"""
-            pass
-
-        def show_result(self, result):
-            """Too Fast!, Too Slow, We have a winner!"""
-            under = float
-            # Too Fast
-            if result<self.TARGET:
-                 under = self.TARGET - self.result
-                return "Elapsed time: ", self.result, "Too Fast by ", under
-
-
-            # Too Slow
-            elif result > self.TARGET:
-                over = float
-                over = (float(self.TARGET - self.result))
-
-            def time_elapsed():
-                """Doc String"""
-                pass
 
 
