@@ -13,6 +13,8 @@
     <child>
       <object class="tk.LabelFrame" id="labelframe1">
         <property name="height">200</property>
+        <property name="relief">flat</property>
+        <property name="takefocus">true</property>
         <property name="text" translatable="yes">Results</property>
         <property name="width">200</property>
         <layout manager="grid">
@@ -21,11 +23,25 @@
           <property name="propagate">True</property>
           <property name="row">0</property>
         </layout>
+        <child>
+          <object class="ttk.Label" id="resultLabel">
+            <property name="compound">top</property>
+            <property name="font">TkDefaultFont</property>
+            <property name="textvariable">string:resultLabelOutput</property>
+            <layout manager="pack">
+              <property name="propagate">True</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
       </object>
     </child>
     <child>
       <object class="tk.Entry" id="entry1">
-        <property name="justify">left</property>
+        <property name="exportselection">true</property>
+        <property name="font">TkTextFont</property>
+        <property name="justify">center</property>
+        <property name="relief">flat</property>
         <property name="state">normal</property>
         <property name="textvariable">string:entry_value</property>
         <layout manager="grid">
@@ -39,6 +55,10 @@
     </child>
     <child>
       <object class="tk.Button" id="check_button">
+        <property name="compound">top</property>
+        <property name="cursor">arrow</property>
+        <property name="justify">left</property>
+        <property name="relief">flat</property>
         <property name="text" translatable="yes">Check</property>
         <property name="textvariable">string:check_button_pressed</property>
         <layout manager="grid">
