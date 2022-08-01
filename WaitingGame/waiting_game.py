@@ -7,13 +7,10 @@
 import time
 import random
 
+
 def waiting_game():
+    """Show the user what to expect (time wise before pressing enter the first time)"""
     target = random.randint(2,4)
-    # INTRO = """This is the waiting game \n,
-    #         The target is to stop the timer at {} second \n
-    #         The timer starts and stops when you press enter
-    #         """
-    # print(INTRO)
     print("You'll have {0:3f} to start/stop!".format(target))
     input("\n ----Press Enter to Begin ---- ")
     start = time.perf_counter()
